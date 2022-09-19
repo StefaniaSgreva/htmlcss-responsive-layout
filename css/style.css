@@ -78,7 +78,46 @@ header span{
     margin-bottom: 1.5rem;
 }
 /* PLANNING  */
+#planning{
+    padding: 3rem 0;
+}
+.plan img{
+    width: 100%;
+    padding: 2rem;
+}
+.plan h2{
+    padding-bottom: 1rem;
+}
 
+.txt{
+    padding: 0.75rem;
+    color: var(--white);
+}
+.txt h2{
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+
+.frame{
+    border-radius: 30px;
+    margin: 1.5rem;
+    text-align: center;background-color: var(--white);
+    
+}
+.frame p{
+    font-style: italic;
+    line-height: 1.5rem;
+    padding: 0 0.75rem;
+}
+.circle{
+    padding: 15px 20px;
+    border-radius: 50%;
+    background-color: var(--blue-magenta);  
+    display: inline-block;
+    color: var(--black);
+    margin: 2rem 0;
+}
+  
 /* TESTIMONIALS  */
 .feedback{
     background-color: var(--blue-magenta);
@@ -90,6 +129,8 @@ header span{
     margin: 1.5rem;
 }
 /* ABOUT US  */
+
+/* GET STARTED  */
 
 /*************************************************
     FOOTER
@@ -106,7 +147,7 @@ footer{
     .container{
         max-width: 750px;
     }
-
+    /* INTRO  */
     #intro .cards{
         display: flex;
         flex-flow: row wrap;
@@ -121,11 +162,20 @@ footer{
     #intro .card:first-child{
         width: calc(66.66% - 1.5rem);
     }
+    /* PLANNING  */
+    #planning .txt h2{
+        font-size: 4rem;
+    }
 }
 /* DESKTOP 1  */
 @media screen  and (min-width:992px){
     .container{
         max-width: 1140px;
+    }
+    /* PLANNING  */
+    #planning .container{
+        max-width: 880px;
+        margin: 0 auto;
     }
     #planning .row{
         display: flex;
@@ -136,11 +186,25 @@ footer{
         width: 50%;
         margin-left: 0.75rem;
         margin-right: 0.75rem;
+        display: flex;
+        align-items: flex-end;
     }
-    #planning .card {
+    #planning .plan {
         margin-top: 2rem;
     }
-    #planning .card img{
-       height: 300px;
+    #planning .txt h2{
+        font-size: 2rem;
+    }
+    .txt img{
+        padding-bottom: 8rem;
+    }
+    .frame img{
+        width: 70%;
+    }
+    .frame p{
+        padding: 0 2.5rem;
+    }
+    .circle{
+        padding: 10px 15px;
     }
 }
