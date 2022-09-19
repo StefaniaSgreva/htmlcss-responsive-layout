@@ -1,0 +1,109 @@
+/*************************************************
+    GENERAL STYLES
+ *************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #FFFFFF;
+    --black: #000000;
+    --dark-gray: #333333;
+    --azure: #0084FD;
+    --baby-blue: #B5DDFF;
+    --liliac: #9792E4;
+    --orange: #FBC061;
+}
+.debug{
+    border: 1px solid black;
+    min-height: 50px;
+}
+body{
+    background-color: var(--white);
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+}
+/*************************************************
+    LAYOUT
+ *************************************************/
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.d-flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+/*************************************************
+    HEADER
+ *************************************************/
+header{
+    background-color: var(--azure);
+    color: var(--white);
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+    position: sticky;
+    top: 0;
+}
+header a{
+    text-decoration: none;
+    
+    color: var(--white);
+}
+header span{
+    font-size: 1.5rem;
+}
+.main-menu{
+    display: none;
+}
+/*************************************************
+    MAIN
+ *************************************************/
+#planning, #features, #get-started{
+    background-color: var(--liliac);
+}
+#intro{
+    padding: 0 2rem;
+}
+.card{
+    background-color: var(--baby-blue);
+    margin-bottom: 1.5rem;
+}
+/*************************************************
+    FOOTER
+ *************************************************/
+footer{
+    background-color: var(--dark-gray);
+}
+
+/************************************************
+    RESPONSIVE
+ ************************************************/
+
+@media screen and (min-width:768px){
+    .container{
+        max-width: 750px;
+    }
+
+    #intro .cards{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -0.75rem; /*trucco per riempire tutto il container = dare il margine delle card in negativo*/
+        margin-right: -0.75rem;
+    }
+    #intro .card{
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        width: calc(33.33% - 1.5rem);
+    }
+    #intro .card:first-child{
+        width: calc(66.66% - 1.5rem);
+    }
+}
