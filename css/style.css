@@ -51,6 +51,7 @@ header{
     margin-bottom: 3rem;
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 header a{
     text-decoration: none;
@@ -152,26 +153,175 @@ header span{
 }
   
 /* TESTIMONIALS  */
+.section-title{
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 1.2rem;
+}
+#testimonials h2{
+    font-size: 2.2rem;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    color: var(--blue-magenta);
+}
+#testimonials p{
+    padding: 0 1.5rem ;
+    text-align: center;
+    font-size: 1.2rem;
+}
 .feedback{
     background-color: var(--blue-magenta);
+    color: var(--white);
+    border-radius: 3rem;
     margin: 1.5rem;
+}
+.feedback img{
+    width: 50%;
+    border-radius: 50%;
+}
+.testimonial-name{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1.5rem 0;
 }
 /* FEATURES  */
+#features{
+    padding: 2rem 1rem;
+}
 .benefit{
     background-color: var(--white);
+    border-radius: 1rem;
     margin: 1.5rem;
 }
+#features h2{
+    color: var(--white);
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+#features h3{
+    color: var(--blue-magenta);
+    font-size: 2.5rem;
+    padding: 1.5rem;
+}
+#features h4{
+    color: var(--blue-magenta);
+    font-size: 1.5rem;
+    padding: 0 1.5rem;
+}
+#features p{
+    padding: 1.5rem;
+}
+#features button{
+   width: 140px;
+   height: 40px;
+   border: none;
+   border-radius: 2rem;
+   background-color: var(--blue-magenta);
+   color: var(--white);
+   margin-bottom: 1.5rem;
+   margin-left: 1.5rem;
+}
+
 /* ABOUT US  */
+#about-us{
+    padding: 3rem 1.5rem;
+}
+#about-us h2{
+    font-size: 2.5rem;
+    color: var(--blue-magenta);
+    padding-bottom: 2rem;
+}
+#about-us p{
+    padding-bottom: 2rem;
+    line-height: 2rem;
+}
+#about-us img{
+    width: 40%;
+    border-radius: 50%;
+    position: relative;
+}
+.quotation-mark{
+    color: var(--blue-magenta);
+    font-size: 3rem;
+    position: absolute;   
+}
+#about-us h3{
+    font-size: 1.8rem;
+    color: var(--blue-magenta);
+    padding: 1.5rem 0;
+}
+#about-us button{
+    background-color: var(--blue-magenta);
+    color: var(--white);
+    border: none;
+    border-radius: 2rem;
+    width: 190px;
+    height: 40px; 
+}
+#about-us button i{
+    padding-right: 5px;
+}
 
 /* GET STARTED  */
-
+#get-started{
+    padding: 1.5rem;
+    color: var(--white);
+    text-align: center;
+}
+.title{
+    font-size: 1.2rem;
+    opacity: 50%;
+    padding: 1.5rem 0;
+}
+#get-started h2{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+    color: var(--yellow-ocre);
+}
+#get-started h3{
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+#get-started p{
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+}
+#get-started button{
+    width: 265px;
+    height: 65px;
+    margin-bottom: 2rem;
+    border: none;
+    border-radius: 2rem;
+    background-color: var(--white);
+    color: var(--blue-magenta);
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+}
+.copyright{
+    font-size: 0.8rem;
+    padding-bottom: 2.5rem;
+}
+.copyright a{
+    color: var(--white);
+}
 /*************************************************
     FOOTER
  *************************************************/
 footer{
     background-color: var(--dark-gray);
+    color: var(--white);
+    padding: 2.5rem 1.5rem;
+    font-size: 0.8rem;
+    text-align: center;
 }
-
+footer p{
+    padding-bottom: 3rem;
+}
+footer a{
+    color: var(--blue-magenta);
+}
 /************************************************
     RESPONSIVE
  ************************************************/
