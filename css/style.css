@@ -156,20 +156,19 @@ header span{
 .section-title{
     text-align: center;
     padding-top: 3rem;
-    font-size: 1.2rem;
 }
 #testimonials h2{
     font-size: 2.2rem;
     text-align: center;
-    padding: 2rem 1.5rem;
+    padding: 1.5rem;
     color: var(--blue-magenta);
 }
 #testimonials p{
     padding: 0 1.5rem ;
     text-align: center;
     font-size: 1.2rem;
-    margin-top: 1.5rem;
     line-height: 2rem;
+    margin-bottom: 2rem;
 }
 .feedback{
     background-color: var(--blue-magenta);
@@ -201,12 +200,12 @@ header span{
 }
 /* FEATURES  */
 #features{
-    padding: 2rem 1rem;
+    padding: 2rem 1.5rem;
 }
-.benefit{
+.benefit-card{
     background-color: var(--white);
     border-radius: 1rem;
-    margin: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 #features h2{
     color: var(--white);
@@ -226,6 +225,7 @@ header span{
 }
 #features p{
     padding: 1.5rem;
+    line-height: 1.5rem;
 }
 #features button{
    width: 140px;
@@ -238,7 +238,7 @@ header span{
    margin-left: 1.5rem;
 }
 
-/* ABOUT US  */
+/* ABOUT US */
 #about-us{
     padding: 3rem 1.5rem;
 }
@@ -363,12 +363,80 @@ footer a{
     #intro .card:first-child{
         width: calc(66.66% - 1.5rem);
     }
+    .card img{
+        width: 50%;
+    }
+
     /* PLANNING  */
     #planning .txt h2{
         font-size: 4rem;
     }
-    
+
+    /* TESTIMONIALS  */
+    #testimonials{
+        margin-bottom: 5rem;
+    }
+    #testimonials h2{
+        font-size: 2.5rem;
+    }
+    .feedback{
+        display: flex;
+        padding: 1.5em;
+    }
+    #testimonials p{
+        text-align: left;
+        padding-top: 1rem;
+        font-size: 1rem;
+    }
+  
+    .round{
+        width: 150px;
+        height: 150px;
+    }
+    .testimonial-name{
+        text-align: left;
+        padding-top: 0;
+        padding-bottom: 2.5rem;
+        text-indent: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+     /* FEATURES  */
+     #features h2{
+        padding-bottom: 3rem;
+        font-size: 2.5rem;
+     }
+     #features h3{
+        font-size: 5rem;
+     }
+     .benefit{
+        display: flex;
+        flex-flow: row wrap;
+        margin-left: -0.75rem; 
+        margin-right: -0.75rem;
+    }
+    .benefit-card{
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+        width: calc(50% - 1.5rem);
+    }
+
+    /* ABOUT US */
+    #about-us .container{
+        display: flex;
+        margin: 0.75rem auto;
+    }
+    .left{
+        width: 60%;
+    }
+    .right{
+        width: 40%;
+        margin-left: 4rem;
+    }
 }
+
+
+
 /* DESKTOP 1  */
 @media screen  and (min-width:992px){
     .container{
@@ -419,5 +487,11 @@ footer a{
     }
     .circle{
         padding: 10px 15px;
+    }
+
+    /* FEATURES  */
+    
+    .benefit-card{
+        width: calc(33.33% - 1.5rem);
     }
 }
