@@ -13,8 +13,8 @@
     --dark-gray: #333333;
     --azure: #0084FD;
     --baby-blue: #B5DDFF;
-    --liliac: #9792E4;
-    --orange: #FBC061;
+    --blue-magenta: #9792E4;
+    --yellow-ocre: #FBC061;
 }
 .debug{
     border: 1px solid black;
@@ -67,8 +67,9 @@ header span{
     MAIN
  *************************************************/
 #planning, #features, #get-started{
-    background-color: var(--liliac);
+    background-color: var(--blue-magenta);
 }
+/* INTRO  */
 #intro{
     padding: 0 2rem;
 }
@@ -76,6 +77,20 @@ header span{
     background-color: var(--baby-blue);
     margin-bottom: 1.5rem;
 }
+/* PLANNING  */
+
+/* TESTIMONIALS  */
+.feedback{
+    background-color: var(--blue-magenta);
+    margin: 1.5rem;
+}
+/* FEATURES  */
+.benefit{
+    background-color: var(--white);
+    margin: 1.5rem;
+}
+/* ABOUT US  */
+
 /*************************************************
     FOOTER
  *************************************************/
@@ -86,7 +101,7 @@ footer{
 /************************************************
     RESPONSIVE
  ************************************************/
-
+/* TABLET  */
 @media screen and (min-width:768px){
     .container{
         max-width: 750px;
@@ -105,5 +120,27 @@ footer{
     }
     #intro .card:first-child{
         width: calc(66.66% - 1.5rem);
+    }
+}
+/* DESKTOP 1  */
+@media screen  and (min-width:992px){
+    .container{
+        max-width: 1140px;
+    }
+    #planning .row{
+        display: flex;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+    #planning .col{
+        width: 50%;
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+    #planning .card {
+        margin-top: 2rem;
+    }
+    #planning .card img{
+       height: 300px;
     }
 }
