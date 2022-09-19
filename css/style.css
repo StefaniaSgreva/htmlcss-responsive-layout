@@ -75,8 +75,41 @@ header span{
 }
 .card{
     background-color: var(--baby-blue);
+    border-radius: 1rem;
     margin-bottom: 1.5rem;
+    padding: 1.5rem;
 }
+.card:first-child{
+    padding: 0;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h3{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--azure);
+    padding: 2rem 0;
+}
+.card button{
+   appearance: none;
+   width: 220px;
+   height: 40px;
+   border: none;
+   border-radius: 3rem;
+   background-color: var(--azure);
+   color: var(--white);
+   margin: 2rem 0;
+}
+.content button i{
+    padding-right: 5px;
+}
+.content{
+    padding: 0 1.5rem
+}
+
 /* PLANNING  */
 #planning{
     padding: 3rem 0;
@@ -166,12 +199,24 @@ footer{
     #planning .txt h2{
         font-size: 4rem;
     }
+    
 }
 /* DESKTOP 1  */
 @media screen  and (min-width:992px){
     .container{
         max-width: 1140px;
     }
+    /* INTRO  */
+    #intro .card:first-child{
+        display: flex;
+    }
+
+    .card img{
+        width: 40%;
+        padding-top: 4rem;
+        padding-right: 4rem;
+    }
+   
     /* PLANNING  */
     #planning .container{
         max-width: 880px;
