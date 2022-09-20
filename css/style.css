@@ -239,7 +239,7 @@ header span{
     padding-top: 1rem;
 }
 #testimonials .container{
-    padding-bottom: 1rem;
+    padding: 1rem 0;
 }
 .feedback{
     background-color: var(--blue-magenta);
