@@ -37,13 +37,16 @@ body{
     font-size: ;
 }
 .title-L{
-    font-size: ;
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.5rem;
 }
 .title_XL{
     font-size: ;
 }
 
-.blue-magenya{
+.blue-magenta{
     color: var(--blue-magenta);
 }
 .text{
@@ -51,9 +54,12 @@ body{
     line-height: 1.5rem;
     margin: 0 1.5rem;
     padding-bottom: 1.5rem;
-    font-weight: bold;
 }
 .text-center{
+    text-align: center;
+}
+.section-title{
+    font-size: 1.2rem;
     text-align: center;
 }
 .raunded{
@@ -134,6 +140,7 @@ header span{
 }
 #intro p{
     color: #5a6e7f;
+    font-weight: bold;
 }
 .card{
     background-color: var(--baby-blue);
@@ -198,28 +205,19 @@ header span{
 }
   
 /* TESTIMONIALS  */
-
-.section-title{
-    text-align: center;
-}
-#testimonials h2{
-    font-size: 2.2rem;
-    text-align: center;
-    padding: 1.5rem;
-    color: var(--blue-magenta);
-}
 #testimonials p{
-    padding: 0 1.5rem ;
-    text-align: center;
     font-size: 1.2rem;
     line-height: 2rem;
-    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+#testimonials .container{
+    padding-bottom: 1rem;
 }
 .feedback{
     background-color: var(--blue-magenta);
     color: var(--white);
     border-radius: 3rem;
-    margin: 1.5rem;
+    margin: 2rem 1.5rem;
     padding: 2rem 0;
 }
 .round{
@@ -241,7 +239,7 @@ header span{
     text-align: center;
     font-weight: bold;
     font-size: 1.5rem;
-    padding-top: 1.5rem;
+    padding: 0.5rem 0;
 }
 /* FEATURES  */
 #features{
@@ -424,26 +422,27 @@ footer a{
         font-size: 4rem;
     }
 
-    /* TESTIMONIALS  */
-    #testimonials{
-        margin-bottom: 5rem;
+    /* TESTIMONIALS */
+   
+    .title-L {
+        font-size: 2.6rem;
     }
-    #testimonials h2{
-        font-size: 2.5rem;
-    }
-    .feedback{
-        display: flex;
-        padding: 1.5em;
-    }
-    #testimonials p{
-        text-align: left;
+    .text{
         padding-top: 1rem;
         font-size: 1rem;
     }
   
+    .feedback{
+        display: flex;
+        padding: 1.5em;
+    }
+    .feedback .text{
+        text-align: left;
+    }
+   
     .round{
-        width: 150px;
-        height: 150px;
+        width: 210px;
+        height: 210px;
     }
     .testimonial-name{
         text-align: left;
@@ -513,7 +512,6 @@ footer a{
         line-height: 1.9rem;
     }
    
-   
     /* PLANNING  */
     #planning .container{
         max-width: 880px;
@@ -543,7 +541,21 @@ footer a{
     .frame img{
         width: 70%;
     }
-  
+    /* TESTIMONIALS */
+    .title-L {
+        font-size: 3rem;
+    }
+    .feedback .text{
+        margin-top: 1.5rem;
+        padding-left: 2.5rem;
+    }
+    .testimonial-name{
+        padding-left: 2.5rem;
+    }
+    .round{
+        width: 180px;
+        height: 180px;
+    }
     /* FEATURES  */
     
     .benefit-card{
