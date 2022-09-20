@@ -132,10 +132,29 @@ header a{
 }
 header span{
     font-size: 1.5rem;
+    cursor: pointer;
 }
 .main-menu{
     display: none;
 }
+.hamburger-menu{
+    background-color: var(--azure);
+    list-style: none;
+    font-size: 1rem;
+    position: absolute;
+    top: 3rem;
+    left: -3rem;
+    display: none;
+    padding: 15px;
+}
+.open{
+    position: relative;
+}
+
+.open:hover .hamburger-menu{
+    display: block;
+}
+
 /*************************************************
     MAIN
  *************************************************/
