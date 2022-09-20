@@ -92,6 +92,7 @@ body{
 .container{
     max-width: 600px;
     margin: 0 auto;
+    padding: 0 1.5rem;
 }
 .d-flex{
     display: flex;
@@ -137,7 +138,7 @@ header span{
 /* INTRO  */
 #intro{
     margin-top: 3.5rem;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 #intro p{
     color: var(--text-gray);
@@ -169,7 +170,7 @@ header span{
 }
 .plan img{
     width: 100%;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
 }
 .plan h2{
     padding-bottom: 1rem;
@@ -185,7 +186,7 @@ header span{
 
 .frame{
     border-radius: 30px;
-    margin: 1.5rem;
+    margin: 1.5rem 0;
     text-align: center;
     background-color: var(--white); 
     color: var(--black); 
@@ -244,7 +245,7 @@ header span{
 }
 /* FEATURES  */
 #features{
-    padding: 2rem 1.5rem;
+    padding: 2rem 0;
 }
 .benefit{
     padding-top: 2.5rem;
@@ -270,7 +271,7 @@ header span{
 
 /* ABOUT US */
 #about-us{
-    padding: 3rem 1.5rem;
+    padding: 3rem 0;
 }
 #about-us h2{
     font-size: 2.5rem;
@@ -310,7 +311,7 @@ header span{
 
 /* GET STARTED  */
 #get-started{
-    padding: 1.5rem;
+    padding: 1.5rem 0;
     color: var(--white);
     text-align: center;
     margin-bottom: 0;
