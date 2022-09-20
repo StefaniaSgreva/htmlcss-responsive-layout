@@ -10,6 +10,7 @@
 :root{
     --white: #FFFFFF;
     --black: #000000;
+    --text-gray: #5a6e7f;
     --dark-gray: #333333;
     --azure: #0084FD;
     --baby-blue: #B5DDFF;
@@ -33,17 +34,23 @@ body{
     font-weight: bold;
     margin: 1.5rem 0;
 }
-.title-M{
-    font-size: ;
+.title-S-left{
+    color: var(--blue-magenta);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0 1.5rem;
 }
 .title-L{
     font-size: 2.2rem;
     font-weight: bold;
     text-align: center;
-    padding: 1.5rem;
+    padding: 1.5rem 0;
 }
 .title_XL{
-    font-size: ;
+    color: var(--blue-magenta);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 1.5rem;
 }
 
 .blue-magenta{
@@ -61,12 +68,6 @@ body{
 .section-title{
     font-size: 1.2rem;
     text-align: center;
-}
-.raunded{
-    border-radius: ;
-}
-.raunded-big{
-    border-radius: ;
 }
 .img-circle{
 
@@ -139,7 +140,7 @@ header span{
     padding: 0 2rem;
 }
 #intro p{
-    color: #5a6e7f;
+    color: var(--text-gray);
     font-weight: bold;
 }
 .card{
@@ -217,7 +218,7 @@ header span{
     background-color: var(--blue-magenta);
     color: var(--white);
     border-radius: 3rem;
-    margin: 2rem 1.5rem;
+    margin: 2rem 0;
     padding: 2rem 0;
 }
 .round{
@@ -245,40 +246,26 @@ header span{
 #features{
     padding: 2rem 1.5rem;
 }
+.benefit{
+    padding-top: 2.5rem;
+}
 .benefit-card{
     background-color: var(--white);
+    color: var(--text-gray);
     border-radius: 1rem;
-    margin-bottom: 1.5rem;
-}
-#features h2{
-    color: var(--white);
-    font-size: 2rem;
-    text-align: center;
-    padding-top: 1rem;
-}
-#features h3{
-    color: var(--blue-magenta);
-    font-size: 2.5rem;
-    padding: 1.5rem;
-}
-#features h4{
-    color: var(--blue-magenta);
-    font-size: 1.5rem;
-    padding: 0 1.5rem;
+    margin-bottom: 2rem;
 }
 #features p{
     padding: 1.5rem;
-    line-height: 1.5rem;
+    line-height: 1.9rem;
 }
 #features button{
-   width: 140px;
-   height: 40px;
-   border: none;
-   border-radius: 2rem;
-   background-color: var(--blue-magenta);
-   color: var(--white);
-   margin-bottom: 1.5rem;
-   margin-left: 1.5rem;
+    width: 140px;
+    background-color: var(--blue-magenta);
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
 }
 
 /* ABOUT US */
@@ -392,6 +379,9 @@ footer a{
     .container{
         max-width: 750px;
     }
+    .title-L {
+        font-size: 2.6rem;
+    }
     /* INTRO  */
     #intro .cards{
         display: flex;
@@ -423,10 +413,6 @@ footer a{
     }
 
     /* TESTIMONIALS */
-   
-    .title-L {
-        font-size: 2.6rem;
-    }
     .text{
         padding-top: 1rem;
         font-size: 1rem;
@@ -453,13 +439,6 @@ footer a{
     }
 
      /* FEATURES  */
-     #features h2{
-        padding-bottom: 3rem;
-        font-size: 2.5rem;
-     }
-     #features h3{
-        font-size: 5rem;
-     }
      .benefit{
         display: flex;
         flex-flow: row wrap;
@@ -470,6 +449,9 @@ footer a{
         margin-left: 0.75rem;
         margin-right: 0.75rem;
         width: calc(50% - 1.5rem);
+    }
+    .title_XL{
+        font-size: 4.5rem;
     }
 
     /* ABOUT US */
@@ -561,6 +543,7 @@ footer a{
     .benefit-card{
         width: calc(33.33% - 1.5rem);
     }
+
 }
 
 /* DESKTOP 2 */
