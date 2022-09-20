@@ -157,12 +157,11 @@ header span{
 
 /* PLANNING  */
 #planning{
-    /* margin: 2rem 0; */
     padding: 3rem 0;
 }
 .plan img{
     width: 100%;
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 .plan h2{
     padding-bottom: 1rem;
@@ -170,7 +169,6 @@ header span{
 
 .txt{
     padding: 0.75rem;
-    color: var(--white);
 }
 .txt h2{
     font-size: 2rem;
@@ -180,12 +178,14 @@ header span{
 .frame{
     border-radius: 30px;
     margin: 1.5rem;
-    text-align: center;background-color: var(--white);
-    
+    text-align: center;
+    background-color: var(--white); 
+    color: var(--black); 
 }
 .frame p{
     font-style: italic;
-    line-height: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.9rem;
     padding: 0 0.75rem;
 }
 .circle{
@@ -498,15 +498,12 @@ footer a{
     #intro .card:first-child{
         display: flex;
     }
-
     .card img{
         width: 50%;
         padding-top: 2rem;
         padding-right: 4rem;
-        padding-left: 4rem;
-
+        padding-left: 3rem;
     }
-  
     .card button{
         height: 45px ;
         font-size: 1.1rem;
@@ -514,8 +511,8 @@ footer a{
     .text{
         font-size: 1.1rem;
         line-height: 1.9rem;
-        margin-right: 0;
     }
+   
    
     /* PLANNING  */
     #planning .container{
@@ -546,13 +543,7 @@ footer a{
     .frame img{
         width: 70%;
     }
-    .frame p{
-        padding: 0 2.5rem;
-    }
-    .circle{
-        padding: 10px 15px;
-    }
-
+  
     /* FEATURES  */
     
     .benefit-card{
