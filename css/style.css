@@ -79,9 +79,6 @@ body{
     font-size: 1.2rem;
     text-align: center;
 }
-.img-circle{
-
-}
 .big-icon{
     color: var(--azure);
     font-size: 80px;
@@ -499,7 +496,7 @@ footer a{
     }
     #about-us p{
         line-height: 2.5rem;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     /* GET STARTED */
     #get-started p{
@@ -522,6 +519,29 @@ footer a{
 @media screen  and (min-width:992px){
     .container{
         max-width: 974px;
+    }
+    /* HEADER  */
+    header span{
+        display: none;
+    }
+    .main-menu{
+        display: inline-block;
+    }
+    nav ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav li{
+        list-style: none;
+        padding-left: 1.5rem;
+    }
+    .btn{
+        width: 120px;  
+        letter-spacing: 0rem;
+        font-weight: normal;
+        font-size: 16px;
     }
     /* INTRO  */
     #intro .card:first-child{
@@ -604,6 +624,10 @@ footer a{
     .quotation-mark{
         font-size: 4rem; 
         left: 160px;  
+    }
+    #about-us p{
+        line-height: 2.5rem;
+        font-size: 1.1rem;
     }
 }
 
