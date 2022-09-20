@@ -440,6 +440,8 @@ footer a{
     .card img{
         width: 50%;
         display: block;
+        margin-left:1.5rem;
+        margin-top: 1.5rem;
     }
 
     /* PLANNING  */
@@ -586,10 +588,9 @@ footer a{
         display: flex;
     }
     .card img{
-        width: 50%;
-        padding-top: 2rem;
-        padding-right: 4rem;
-        padding-left: 3rem;
+        width: 100%;
+        padding-top: 3rem;
+        margin-right: 4rem;
     }
     .card button{
         height: 45px ;
@@ -599,7 +600,9 @@ footer a{
         font-size: 1.1rem;
         line-height: 1.9rem;
     }
-   
+   .content p{
+    padding-right: 40px;
+   }
     /* PLANNING  */
     #planning .container{
         max-width: 880px;
