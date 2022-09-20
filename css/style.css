@@ -40,6 +40,11 @@ body{
     font-weight: bold;
     padding: 0 1.5rem;
 }
+.title-M{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1.5rem 0;
+}
 .title-L{
     font-size: 2.2rem;
     font-weight: bold;
@@ -52,7 +57,12 @@ body{
     font-weight: bold;
     padding: 1.5rem;
 }
-
+.title-XXL{
+    font-size: 4rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    color: var(--yellow-ocre);
+}
 .blue-magenta{
     color: var(--blue-magenta);
 }
@@ -104,7 +114,7 @@ body{
     align-items: center;
 }
 section{
-    margin: 5rem 0;
+    margin: 3rem 0;
 }
 
 /*************************************************
@@ -138,7 +148,6 @@ header span{
 /* INTRO  */
 #intro{
     margin-top: 3.5rem;
-    /* padding: 0 2rem; */
 }
 #intro p{
     color: var(--text-gray);
@@ -270,40 +279,42 @@ header span{
 }
 
 /* ABOUT US */
-#about-us{
-    padding: 3rem 0;
-}
-#about-us h2{
+#about-us .title-L{
     font-size: 2.5rem;
-    color: var(--blue-magenta);
-    padding-bottom: 2rem;
+    text-align: left;
 }
 #about-us p{
     padding-bottom: 2rem;
     line-height: 2rem;
 }
-#about-us img{
-    width: 40%;
-    border-radius: 50%;
+.images{
     position: relative;
+}
+#about-us img{
+    width: 60%;
+    border-radius: 50%;
 }
 .quotation-mark{
     color: var(--blue-magenta);
-    font-size: 3rem;
-    position: absolute;   
+    font-size: 3rem; 
+    position: absolute;
+    left: 120px;  
+    top: 0;
 }
-#about-us h3{
-    font-size: 1.8rem;
+.quote{
+    font-size: 1.6rem;
+    font-weight: bold;
     color: var(--blue-magenta);
     padding: 1.5rem 0;
 }
 #about-us button{
     background-color: var(--blue-magenta);
     color: var(--white);
-    border: none;
-    border-radius: 2rem;
     width: 190px;
-    height: 40px; 
+    height: 35px;
+    border-radius: 3rem;
+    letter-spacing: 0;
+    font-weight: normal;
 }
 #about-us button i{
     padding-right: 5px;
@@ -312,42 +323,34 @@ header span{
 /* GET STARTED  */
 #get-started{
     padding: 1.5rem 0;
-    color: var(--white);
     text-align: center;
     margin-bottom: 0;
+    margin-top: 5rem;
 }
-.title{
-    font-size: 1.2rem;
+#get-started .section-title{
     opacity: 50%;
     padding: 1.5rem 0;
 }
-#get-started h2{
-    font-size: 4rem;
-    padding-bottom: 2rem;
-    color: var(--yellow-ocre);
-}
-#get-started h3{
-    font-size: 2rem;
-    padding-bottom: 2rem;
+.p-container{
+    max-width: 460px;
+    margin: 0 auto;
 }
 #get-started p{
-    padding-bottom: 2rem;
     line-height: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 #get-started button{
     width: 265px;
     height: 65px;
-    margin-bottom: 2rem;
-    border: none;
-    border-radius: 2rem;
+    margin-bottom: 1.5rem;
     background-color: var(--white);
     color: var(--blue-magenta);
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     letter-spacing: 3px;
 }
 .copyright{
-    font-size: 0.8rem;
-    padding-bottom: 2.5rem;
+    font-size: 0.9rem;
+    padding-bottom: 2rem;
 }
 .copyright a{
     color: var(--white);
@@ -366,6 +369,10 @@ footer{
     font-size: 0.8rem;
     text-align: center;
 }
+.footer-container{
+    max-width: 410px;
+    margin: 0 auto;
+}
 footer p{
     padding-bottom: 3rem;
 }
@@ -380,14 +387,22 @@ footer a{
     .container{
         max-width: 750px;
     }
+    .title-XXL{
+        font-size: 6rem;
+        padding-top: 2rem;
+    }
     .title-L {
         font-size: 2.6rem;
+    }
+    .title-M{
+        font-size: 3rem;
+        padding: 0;
     }
     /* INTRO  */
     #intro .cards{
         display: flex;
         flex-flow: row wrap;
-        margin-left: -0.75rem; /*trucco per riempire tutto il container = dare il margine delle card in negativo*/
+        margin-left: -0.75rem; 
         margin-right: -0.75rem;
     }
     #intro .card{
@@ -466,7 +481,39 @@ footer a{
     .right{
         width: 40%;
         margin-left: 4rem;
+        align-self: flex-start;
+        padding-top: 2.5rem;
     }
+    #about-us .title-L{
+        font-size: 4.5rem;
+    }
+    #about-us img{
+        width: 90%;
+    }
+    .quotation-mark{
+        font-size: 4rem; 
+        left: 170px;  
+    }
+    .quote{
+        font-size: 1.8rem;
+    }
+    #about-us p{
+        line-height: 2.5rem;
+        font-size: 1.1rem;
+    }
+    /* GET STARTED */
+    #get-started p{
+        font-size: 1.1rem;
+    }
+    #get-started button{
+       height: 75px;
+    }
+
+    /* FOOTER */
+    footer{
+        font-size: 1rem;
+    }
+    
 }
 
 
@@ -544,7 +591,20 @@ footer a{
     .benefit-card{
         width: calc(33.33% - 1.5rem);
     }
-
+    /* ABOUT US */
+    .left{
+        width: 70%;
+    }
+    .right{
+        width: 30%;
+        padding-top: 2.5rem;
+        padding-left: 4rem;
+    }
+    
+    .quotation-mark{
+        font-size: 4rem; 
+        left: 160px;  
+    }
 }
 
 /* DESKTOP 2 */
