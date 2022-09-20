@@ -91,6 +91,7 @@ body{
     height: 40px;  
     letter-spacing: 0.2rem;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /*************************************************
@@ -542,6 +543,22 @@ footer a{
         letter-spacing: 0rem;
         font-weight: normal;
         font-size: 16px;
+    }
+    .submenu{
+        background-color: var(--azure);
+        position: absolute;
+        top: 3rem;
+        left:0;
+        line-height: 2rem;
+        display: none;
+        padding-right: 20px;
+    }
+    .nav-menu{
+        position: relative;
+    }
+    
+    .nav-menu:hover .submenu{
+        display: block;
     }
     /* INTRO  */
     #intro .card:first-child{
